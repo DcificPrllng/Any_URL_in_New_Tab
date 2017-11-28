@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx"
+	xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData">
+	<edmx:DataServices m:DataServiceVersion="2.0">
+		<Schema Namespace="ZFIORI_BEN_ENR_TILE_SRV" xml:lang="en" sap:schema-version="1" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+			<EntityType Name="TileContent" sap:content-version="1">
+				<Key><PropertyRef Name="key"/></Key><Property Name="key" Type="Edm.String" Nullable="false" MaxLength="4" sap:creatable="false" sap:updatable="false" sap:sortable="false"
+					sap:filterable="false"/><Property Name="number" Type="Edm.String" Nullable="false" MaxLength="10" sap:creatable="false" sap:updatable="false" sap:sortable="false"
+					sap:filterable="false"/><Property Name="numberUnit" Type="Edm.String" Nullable="false" MaxLength="100" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><Property Name="info" Type="Edm.String" Nullable="false" MaxLength="100" sap:creatable="false" sap:updatable="false" sap:sortable="false"
+					sap:filterable="false"/><Property Name="infoStatus" Type="Edm.String" Nullable="false" MaxLength="100" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><Property Name="subtitle" Type="Edm.String" Nullable="false" MaxLength="100" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><Property Name="backendHost" Type="Edm.String" Nullable="false" sap:creatable="false" sap:updatable="false" sap:sortable="false"
+					sap:filterable="false"/></EntityType>
+			<EntityContainer Name="ZFIORI_BEN_ENR_TILE_SRV_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx"><EntitySet Name="TileContentCollection" EntityType="ZFIORI_BEN_ENR_TILE_SRV.TileContent" sap:content-version="1"/>
+				<FunctionImport Name="Summary" ReturnType="ZFIORI_BEN_ENR_TILE_SRV.TileContent" EntitySet="TileContentCollection" m:HttpMethod="GET"><Parameter Name="parameter1" Type="Edm.String" Mode="In"/><Parameter Name="parameter2" Type="Edm.String" Mode="In"/><Parameter Name="parameter3" Type="Edm.String" Mode="In"/></FunctionImport>
+			</EntityContainer><atom:link rel="self" href="https://myappsq.pacidrill.com/sap/opu/odata/sap/ZFIORI_NEWPAGE_ANYURL_SRV/$metadata"
+				xmlns:atom="http://www.w3.org/2005/Atom"/><atom:link rel="latest-version" href="https://myappsq.pacidrill.com/sap/opu/odata/sap/ZFIORI_NEWPAGE_ANYURL_SRV/$metadata"
+				xmlns:atom="http://www.w3.org/2005/Atom"/></Schema>
+	</edmx:DataServices>
+</edmx:Edmx>
